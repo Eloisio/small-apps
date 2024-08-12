@@ -1,19 +1,4 @@
-/*
-THEME: Small Apps | Bootstrap App Landing Template
-VERSION: 1.0.0
-AUTHOR: Themefisher
 
-HOMEPAGE: https://themefisher.com/products/small-apps-free-app-landing-page-template/
-DEMO: https://demo.themefisher.com/small-apps/
-GITHUB: https://github.com/themefisher/Small-Apps-Bootstrap-App-Landing-Template
-
-Get HUGO Version : https://themefisher.com/products/small-apps-hugo-app-landing-theme/
-
-WEBSITE: https://themefisher.com
-TWITTER: https://twitter.com/themefisher
-FACEBOOK: https://www.facebook.com/themefisher
-*/
-/*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:300,400,600,700,800");
 body {
   font-family: "Open Sans", sans-serif;
@@ -72,6 +57,55 @@ ul.app-badge {
 ul.app-badge li a img {
   width: 150px;
   height: auto;
+}
+
+.modern-btn {
+  background: linear-gradient(45deg, #007bff, #6610f2); /* Gradiente de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remover borda padrão */
+  padding: 10px 20px; /* Ajustar o padding para tornar o botão maior */
+  border-radius: 30px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave */
+  transition: all 0.3s ease; /* Transição suave para hover */
+}
+
+.footer-text-color {
+  color: #07950e; /* Mudar para a cor desejada */
+}
+
+.footer-text-color a, .footer-text-color a:visited {
+  color: #9a9af1; /* Cor dos links */
+}
+
+/* Para manter a cor do link ao passar o mouse e quando selecionado */
+.footer-text-color a:hover, .footer-text-color a:active {
+  color: #1622a9; /* Cor ao passar o mouse, ajuste conforme necessário */
+}
+.modern-btn:hover, .modern-btn:focus {
+  background: linear-gradient(45deg, #6610f2, #007bff); /* Mudar gradiente no hover */
+  box-shadow: 0 6px 8px rgba(0,0,0,0.15); /* Sombra mais proeminente no hover */
+  color: #ffffff; /* Pode ajustar a cor do texto se necessário */
+  transform: translateY(-2px); /* Efeito de elevação */
+}
+
+.text-custom-color {
+  color: #e1ff00; /* Sua cor personalizada */
+  text-shadow: 2px 2px 4px #ea0808; /* Exemplo de sombra: horizontal 2px, vertical 2px, desfoque 4px, cor preta */
+    font-size: 25px; /* Tamanho da fonte */
+    text-align: center; /* Centralização do texto */
+}
+.text-custom-color3 {
+  color: #2a26f0; /* Sua cor personalizada */
+  text-shadow: 2px 2px 4px #b31212; /* Exemplo de sombra: horizontal 2px, vertical 2px, desfoque 4px, cor preta */
+    font-size: 25px; /* Tamanho da fonte */
+    text-align: center; /* Centralização do texto */
+    bottom: 10px;
+}
+.text-custom-color2 {
+  color: #4f57f0; /* Sua cor personalizada */
+  text-shadow: 2px 2px 4px #0a07a1; /* Exemplo de sombra: horizontal 2px, vertical 2px, desfoque 4px, cor preta */
+    font-size: 10px; /* Tamanho da fonte */
+    text-align: center; /* Centralização do texto */
 }
 
 @media (max-width: 400px) {
@@ -170,17 +204,18 @@ a:hover {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 50px 0;
+  margin-bottom: 00px;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 00px;
 }
 
 .section-title h2 {
   font-size: 35px;
-  margin-bottom: 13px;
+  margin-bottom: 0px;
 }
 
 .section-title p {
@@ -190,7 +225,7 @@ a:hover {
 
 @media (max-width: 480px) {
   .section-title p {
-    width: 100%;
+    width: 200%;
   }
 }
 
@@ -352,15 +387,19 @@ button:focus,
   color: #fff;
   box-shadow: none;
 }
+.center-btn-text-align {
+  text-align: center;
+  
+}
 
-.btn-main-md {
-  padding: 17px 38px;
-  border-radius: 3px;
+ .btn-main-md {
+  padding: 15px 25px;
+  border-radius: 33px;
   background: #2e7eed;
   color: #fff;
   outline: none;
 }
-
+/*
 .btn-main-md:hover {
   color: #fff;
 }
@@ -368,7 +407,15 @@ button:focus,
 .btn-main-md:focus {
   color: #fff;
   box-shadow: none;
+} */
+
+.center-btn-container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente (se desejar) */
+  height: 100vh; /* Ajuste a altura conforme necessário, 100vh para toda a altura da viewport */
 }
+
 
 .btn-main-sm {
   padding: 15px 35px;
@@ -417,7 +464,7 @@ button:focus,
 .main-nav .navbar-nav .nav-item .nav-link {
   position: relative;
   text-align: center;
-  font-size: 13px;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
   color: #000;
@@ -502,7 +549,23 @@ button:focus,
     margin: 0;
   }
 }
+/* Estilos padrão para desktop */
+.social-icon.list-inline-item a {
+  display: inline-flex; /* Usa flexbox para alinhar ícone e texto */
+  align-items: center; /* Centraliza os itens verticalmente */
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
 
+/* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+  .social-icon.list-inline-item {
+      font-size: 18px; /* Diminui o tamanho da fonte para economizar espaço */
+  }
+
+  .social-icon.list-inline-item a {
+      padding: 0 5px; /* Adiciona um pouco de padding para evitar sobreposição */
+  }
+}
 .main-nav .dropdown .dropdown-menu .dropdown-item {
   font-size: 13px;
   padding: 3px 22px;
@@ -582,7 +645,7 @@ button:focus,
 }
 
 .footer-main {
-  padding: 92px 0;
+  padding: 22px 0;
   background: #1a1b1f;
 }
 
@@ -593,7 +656,8 @@ button:focus,
 }
 
 .footer-main .block img {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .footer-main .block img #small-Apps {
@@ -603,13 +667,14 @@ button:focus,
 .footer-main .block ul.social-icon li a {
   text-decoration: none;
   display: block;
-  width: 38px;
-  height: 38px;
+  width: 18px;
+  height: 18px;
   border-radius: 100%;
   background: #3f3f43;
   color: #fff;
   text-align: center;
-  line-height: 38px;
+  line-height: 18px;
+  font-size: 74px;
 }
 
 @media (max-width: 768px) {
@@ -650,8 +715,20 @@ button:focus,
   text-align: center;
   padding: 110px 0;
 }
+.footer-text-size {
+  font-size: 1.5em; /* Ajuste este valor conforme necessário */
+}
+.social-icons-large i {
+  font-size: 44px; /* Aumenta o tamanho da fonte dos ícones */
+}
+ul.social-icon li {
+  margin-right: 40px; /* Ajusta o espaçamento entre os ícones */
+}
 
-.footer-classic ul.social-icons {
+ul.social-icon li a {
+  padding: 45px; /* Ajusta o padding para alterar o espaço ao redor dos ícones */
+}
+/* .footer-classic ul.social-icons {
   margin-bottom: 30px;
 }
 
@@ -667,16 +744,16 @@ button:focus,
 }
 
 .footer-classic ul.social-icons li a i {
-  font-size: 25px;
+  font-size: 65px;
   color: #000;
-}
+} */
 
 .footer-classic ul.footer-links li a {
   padding: 0 10px;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 64px;
   color: #000;
 }
 
@@ -1117,7 +1194,9 @@ button:focus,
   margin: 10px;
   border-radius: 5px;
 }
-
+.larger-image {
+  width: 250%; /* Aumenta a largura para 150% do seu contêiner */
+}
 .testimonial .testimonial-slider .item .block .image {
   margin-top: 30px;
   margin-bottom: 5px;
@@ -1157,11 +1236,21 @@ button:focus,
 .testimonial .testimonial-slider .owl-dots .owl-dot.active span {
   background: #2e7eed;
 }
+/* Ajuste opcional para reduzir o espaço entre as colunas */
+.row > [class*='col-'] {
+  padding-right: 5px; /* Reduz o padding à direita */
+  padding-left: 5px; /* Reduz o padding à esquerda */
+}
 
+/* Para ajustes mais específicos, você pode adicionar uma classe customizada às colunas e definir margens negativas */
+.custom-margin {
+  margin-right: -15px; /* Exemplo de margem negativa à direita */
+  margin-left: -15px; /* Exemplo de margem negativa à esquerda */
+}
 /* homepage 3 */
 .gradient-banner {
-  padding: 100px 0 170px;
-  position: relative;
+  padding: 0px 0 40px;
+  position: center;
   overflow: hidden;
 }
 
@@ -1172,10 +1261,31 @@ button:focus,
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  width: 150%;
+  height: 150%;
+  border-radius: 30%;
+  background-image: linear-gradient(45deg, #4d47f1 0%, #798bd2 20%, #f6f6f6 50%);
+  
+}
+
+.gradient-banner2 {
+  padding: 10px 0 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.gradient-banner2::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 30%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 200%;
   height: 200%;
-  border-radius: 50%;
-  background-image: linear-gradient(45deg, #009EC5 0%, #2e7eed 20%, #02225B 50%);
+  border-radius: 30%;
+  background-image: linear-gradient(45deg, #0e07d4 10%, #4c2ff4e3 20%, #edeef6 50%);
+  
 }
 
 .pull-top {
@@ -1523,7 +1633,10 @@ hr {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
-
+.custom-padding-margin {
+  margin: 20px; /* Margem em volta da imagem */
+  padding-left: 520px; /* Padding à esquerda */
+}
 .blog-single .single-post {
   padding-bottom: 70px;
 }
@@ -1678,6 +1791,9 @@ hr {
 
 .about .about-slider .item {
   padding: 20px;
+  width: 800px; /* Mantém a largura em 100% do contêiner */
+  height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+  max-width: none; /* Sobrescreve qualquer max-width existente */
 }
 
 .about .about-slider .owl-dots .owl-dot:hover span {
@@ -2062,7 +2178,10 @@ hr {
     margin-right: 0;
   }
 }
-
+.footer-main.container {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .user-login .block .image img {
   border-radius: 8px;
 }
