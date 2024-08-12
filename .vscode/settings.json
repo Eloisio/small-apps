@@ -1,3 +1,5 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "appService.defaultWebAppToDeploy": "/subscriptions/eaa49b12-cae5-46f9-bc13-2dc1e55d6a60/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/VisionCWebApp",
+    "appService.deploySubpath": "."
 }
